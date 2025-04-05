@@ -1,0 +1,41 @@
+.card {
+    width: 700px;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card .imgContainer {
+    width: 30%;
+}
+
+.card .imgContainer img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+}
+
+.textContainer {
+    width: 70%;
+    font-family: "Helvetica", sans-serif;
+}
+
+.textContainer h2 {
+    color: var(--blue);
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex-direction: column;
+        max-width: 250px;
+    }
+
+    .card .imgContainer,
+    .card .textContainer {
+        width: 100%;
+    }
+}

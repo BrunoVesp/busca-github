@@ -1,0 +1,15 @@
+.error {
+    background-color: lightgray;
+    padding: 14px;
+    border-radius: 8px;
+    color: #ff1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h2 {
+    text-align: center;
+    width: 80%;
+    font-weight: normal;
+}

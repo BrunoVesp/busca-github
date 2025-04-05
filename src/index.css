@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('assets/fonts/HelveticaNeueLight.otf');
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('assets/fonts/HelveticaNeueBlack.otf');
+}
+
+:root {
+    --white: #FFFFFF;
+    --background: #000000;
+    --blue: #005CFF;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Helvetica", sans-serif;
+}
