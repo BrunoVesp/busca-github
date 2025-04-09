@@ -10,11 +10,18 @@
 
 :root {
     --white: #FFFFFF;
-    --background: #000000;
+    --background: #1F1F1F;
+    --black: #000000;
     --blue: #005CFF;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: var(--background);
+    background-color: var(--white);
     font-family: "Helvetica", sans-serif;
 }

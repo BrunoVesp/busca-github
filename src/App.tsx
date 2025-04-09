@@ -50,23 +50,26 @@ function App() {
   }
 
   return (
-    <main className={styles.container}>
-      <Title />
-      <SearchForm
-        onSubmit={handleSubmit}
-        username={username}
-        setUsername={setUsername}
-      />
-      {loading ? <Loading /> :
-        error ? <Error /> :
-          userData ?
-            <ProfileCard
-              name={userData.name}
-              avatar_url={userData.avatar_url}
-              bio={userData.bio}
-            />
-            : null}
-    </main>
+    <div className={styles.background}>
+      <div className={styles.dashedDiv}></div>
+      <section className={styles.container}>
+        <Title />
+        <SearchForm
+          onSubmit={handleSubmit}
+          username={username}
+          setUsername={setUsername}
+        />
+        {loading ? <Loading /> :
+          error ? <Error /> :
+            userData ?
+              <ProfileCard
+                name={userData.name}
+                avatar_url={userData.avatar_url}
+                bio={userData.bio}
+              />
+              : null}
+      </section>
+    </div>
   )
 }
 
